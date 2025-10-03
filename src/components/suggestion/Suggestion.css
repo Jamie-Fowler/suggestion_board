@@ -1,0 +1,76 @@
+.suggestion-card {
+  border-radius: 25px;
+  border: 1.5px solid #ccc;
+  padding: 0;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  width: 30%;
+  min-width: 300px;
+  background-color: #2c3e50;
+}
+
+.priority {
+  width: 100%;
+  height: 25px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  font-weight: bold;
+}
+.priority::first-letter {
+    text-transform: uppercase;
+}
+.priority.high { background-color: lightcoral; }
+.priority.medium { background-color: lightsalmon; }
+.priority.low { background-color: lightgreen; }
+
+.padding {
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  min-height: 135px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.type {
+  flex: 0 0 60%;
+  border-bottom: 1.5px solid #ccc;
+}
+.type::first-letter {
+    text-transform: uppercase;
+}
+
+.status {
+  padding: 5px;
+  flex: 0 0 40%;
+}
+
+h3 {
+  margin: 8px 0;
+}
+
+.description {
+  margin: 8px;
+  font-size: small;
+}
+
+.footer {
+  margin-top: auto;
+  display: flex;
+  gap: 8px;
+}
+
+.bottomButton {
+  border-radius: 25px;
+  width: 50%;
+  padding: 1.5px; 
+}
+.bottomButton:hover {
+  cursor: pointer;
+  background-color: #0056b3;
+  box-shadow: 0 0 8px #66b3ff;  /* glowing effect */
+}

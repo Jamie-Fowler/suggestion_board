@@ -1,0 +1,29 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(36, 36, 36, 0.5); /* semi-transparent overlay */
+  backdrop-filter: blur(4px);              /* blur content behind */
+  z-index: 1000;                           /* ensure on top */
+}
+
+.popup-inner {
+  position: relative;
+  padding: 20px;
+  background-color: #242424;  /* solid popup background */
+  border-radius: 8px;
+  z-index: 1001;               /* above the blur overlay */
+}
+
+.popup-inner .close-btn {
+  position: relative;
+  cursor: pointer;
+  margin: 16px 0px 0px 0px;
+}

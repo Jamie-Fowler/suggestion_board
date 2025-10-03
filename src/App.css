@@ -1,0 +1,29 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 12px;
+  text-align: center;
+}
+
+.toolBar { 
+  display: flex; 
+  flex-wrap: wrap; 
+  align-content: center; 
+  width: 100%; 
+  gap: 10px
+}
+
+.filterBy { 
+  display: flex;
+  align-items: center;
+} 
+
+.sortBy { 
+  display: flex;
+  align-items: center; 
+} 
+.createSug {
+  display: flex; 
+  align-items: center; 
+  justify-content: flex-end; 
+}
